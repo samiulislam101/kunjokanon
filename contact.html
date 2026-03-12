@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<link rel="stylesheet" href="final.css">
+</head>
+
+<body>
+  <header class="nav">
+
+    <div class="nav-container">
+        <h1 class="brand">KUNJO-KANON DESIGN & DEVELOPMENT LTD.
+          
+        </h1>
+<!--menu-->
+        <div class="menu">
+            <a href="home.html" target="_blank">Home</a>
+            <a href="about.html"target="_blank">About</a>
+            <a href="service.html"target="_blank">Services</a>
+            <a href="Project.html"target="_blank">Project</a>
+            <a href="contact.html"target="_blank">Contact</a>
+        </div>
+    </div>
+</header>
+<section id="contact us" class="container card">
+
+      <h1>Contact Us:</h1><br>
+      <div class="card">
+        <h2>Engr. Md. Matiur Rahman PEng.</h2>
+        B.Sc in Engg.(Civil), BUET <br>
+        Adviser
+      </div>
+      <div class="card">
+        <h2>Engr. Md. Shirajul Islam (Shiraj)</h2>
+        B.Sc in Engg.(Civil), BUET <br>
+        Adviser
+      </div>
+      <div class="card" >
+        <h2>Engr. Md.Rasel Hossain</h2>
+        B.Sc in Engg.(Civil) <br>
+        Chief Executive Officer(CEO) <br>
+        Phone: 01758-383949
+
+      </div>
+      <div class="card">
+        <h2>Engr. Md.Raihanul Hasan</h2>
+        B.Sc in Engg.(Civil) <br>
+        Chief Executive Engineer(CEE) <br>
+        Phone: 01620-308853 
+      </div>
+      <div class="card">
+        <h2>Engr. Abdur Rahim </h2>
+        B.Sc in Engg.(Civil) <br>
+        Senior Executive Engineer <br>
+        Phone: 01684-023250
+
+      </div>
+      <div class="card">
+        <h2>Engr. Abdullah Al Aowal</h2>
+        B.Sc in Engg.(Civil) <br>
+        Asst. Engineer <br>
+        Phone: 01608-910946 <br>
+        E-Mail: eng.aowal1996@gmail.com
+  
+      </div>
+    </section>
+      
+
+
+<br><br><br><br>
+<section id="contact us" class="container card">
+      <form id="contactForm" method="post" action="/contact us" onsubmit="return validateAndSubmit(event)">
+      <h2>Share your comments: </h2>
+        <div class="form-row">
+          <label>Full Name:</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+
+        <div class="form-row">
+          <label>Number:</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+
+        <div class="form-row">
+          <label>Email:</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="form-row">
+          <label>Division:</label>
+          <select id="division" name="division" onchange="onDivisionChange()" required>
+            <option value="">--Select Division--</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label>District:</label>
+          <select id="district" name="district" onchange="onDistrictChange()" required>
+            <option value="">--Select District--</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label>Upazila:</label>
+          <select id="upazila" name="upazila" required>
+            <option value="">--Select Upazila--</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label>Message:</label>
+          <textarea name="message" id="message" rows="5"></textarea>
+        </div>
+
+        <div class="form-row">
+          <button type="submit" class="btn primary">Send Message</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <h2>&copy; <span id="year"></span> 
+        Kunjo-Kanon Design &Development Ltd.  — All rights reserved.</h2>
+        <h3><img  class="location" src="picture/location.png"> Office: House#09,Road-02,Block-D, Chand uddyan Housing, Mohammadpur,Dhaka-1207
+        </h3>
+        <h3> <img class="phone" src="picture/call.png">
+        +88 01758-393949,            +88 01620-308853
+        </h3>
+        <h3> <img class="facebook" src="picture/facebook.png">
+        Kunjo-Kanon Design & Development Ltd. </h3>
+        
+        <h3> <img class="gmail" src="picture/gmail.png" alt="">
+        cdesofficial@gmail.com
+        </h3>
+      
+<div class="map">
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d561.0774573957017!2d90.35203156404678!3d23.755994606025823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf007a7055bf%3A0xd37a62b0cff7e906!2sKunjo%20kanon%20Design%20%26%20Development!5e1!3m2!1sen!2sbd!4v1773141043932!5m2!1sen!2sbd"
+width="450"
+height="250"
+style="border:0;"
+loading="lazy">
+</iframe>
+
+
+
+    </div>
+  </footer>
+
+  <script>
+
+    const BD_LOCATIONS = {
+      "Dhaka": {
+        "Dhaka": ["Dhamrai", "Dhanmondi (Thana)", "Dohar", "Keraniganj", "Nawabganj", "Savar"],
+
+        "Faridpur": ["Alfadanga", "Bhanga", "Boalmari", "Charbhadrasan", "Faridpur Sadar", "Madhukhali", "Nagarkanda", "Sadarpur", "Saltha"],
+
+        "Gazipur":["Gazipur Sadar", "Kaliakair", "Kaliganj", "Kapasia", "Sreepur"],
+
+        "Gopalganj":["Gopalganj Sadar", "Kashiani", "Kotalipara", "Muksudpur", "Tungipara"],
+
+        "Kishoreganj":["Austagram", "Bajitpur", "Bhairab", "Hossainpur", "Itna", "Karimganj", "Katiadi", "Kishoreganj Sadar", "Kuliarchar", "Mithamain", "Nikli", "Pakundia", "Tarail"],
+
+        "Madaripur":["Madaripur Sadar", "Kalkini", "Rajoir", "Shibchar"],
+
+        "Manikganj":["Daulatpur", "Ghior", "Harirampur", "Manikganj Sadar", "Saturia", "Shivalaya", "Singair"],
+
+        "Munshiganj":["Gazaria", "Lohajang", "Munshiganj Sadar", "Sirajdikhan", "Sreenagar", "Tongibari"],
+
+        "Narayanganj":["Araihazar", "Bandar", "Narayanganj Sadar", "Rupganj", "Sonargaon"],
+
+        "Narsingdi":["Belabo", "Monohardi", "Narsingdi Sadar", "Palash", "Raipura", "Shibpur"],
+         
+        "Rajbari":["Baliakandi", "Goalanda", "Kalukhali", "Pangsha", "Rajbari Sadar"],
+
+        "Shariatpur":["Bhedarganj", "Damudya", "Gosairhat", "Naria", "Shariatpur Sadar","Zajira"],
+
+        "Tangail":["Basail", "Bhuapur", "Delduar", "Dhanbari", "Ghatail", "Gopalpur", "Kalihati", "Madhupur", "Mirzapur", "Nagarpur", "Sakhipur", "Tangail Sadar"],
+
+      },
+      "Chattogram": {
+        "Chattogram": ["Anwara", "Banshkhali", "Boalkhali", "Chandanaish", "Fatikchhari", "Hathazari", "Karnaphuli", "Lohagara", "Mirsharai", "Patiya", "Rangunia", "Raozan", "Sandwip", "Satkania", "Sitakunda"],
+
+        "Cox's Bazar": ["Chakaria", "Cox’s Bazar Sadar", "Kutubdia", "Maheshkhali", "Pekua", "Ramu", "Teknaf", "Ukhiya"],
+
+        "Cumilla":["Barura", "Brahmanpara", "Burichong", "Chandina", "Chauddagram", "Cumilla Sadar", "Cumilla Sadar South", "Daudkandi", "Debidwar", "Homna", "Laksam, Lalmai", "Monoharganj", "Meghna", "Muradnagar", "Nangalkot","Titas"],
+        
+        "Feni":["Chhagalnaiya", "Daganbhuiyan", "Feni Sadar", "Fulgazi", "Parshuram", "Sonagazi"],
+
+        "Noakhali":["Begumganj", "Chatkhil", "Companiganj", "Hatiya", "Kabirhat", "Noakhali Sadar", "Senbagh", "Sonaimuri", "Subarnachar"],
+
+        "Laxmipur":[ "Laxmipur Sadar", "Kamalnagar", "Raipur", "Ramganj", "Ramgati"],
+
+        "Chandpur":["Chandpur Sadar", "Faridganj", "Haimchar", "Hajiganj", "Kachua", "Matlab North", "Matlab South", "Shahrasti"],
+
+        "Brahmanbaria":["Akhaura", "Ashuganj", "Bancharampur", "Bijoynagar", "Brahmanbaria Sadar", "Kasba", "Nabinagar", "Nasirnagar", "Sarail"],
+
+      },
+      "Khulna": {
+        "Khulna": ["Batiaghata", "Dacope", "Dighalia", "Dumuria", "Koyra", "Paikgachha", "Phultala", "Rupsa", "Terokhada"],
+        
+        "Jessore":["Abhaynagar", "Bagherpara", "Chaugachha", "Jessore Sadar", "Jhikargacha", "Keshabpur", "Manirampur", "Sharsha"],
+
+        "Satkhira":["Assasuni", "Debhata", "Kaliganj", "Kalaroa", "Satkhira Sadar", "Shyamnagar", "Tala"],
+
+        "Kushtia":["Bheramara", "Daulatpur", "Khoksa", "Kumarkhali", "Kushtia Sadar", "Mirpur"],
+
+        "Chuadanga":["Alamdanga", "Chuadanga Sadar", "Damurhuda", "Jibannagar"],
+
+        "Meherpur":["Gangni", "Meherpur Sadar", "Mujibnagar"],
+
+        "Narail":["Kalia", "Lohagara", "Narail Sadar"],
+
+        "Magura":["Magura Sadar", "Mohammadpur", "Shalikha", "Sreepur"],
+
+        "Bagerhat":["Chitalmari", "Fakirhat", "Kachua", "Mollahat", "Mongla", "Morrelganj", "Rampal", "Sarankhola", "Bagerhat Sadar"],
+
+      },
+      "Rajshahi":{
+        "Rajshahi":["Bagha", "Bagmara", "Charghat", "Durgapur", "Godagari", "Mohanpur", "Paba", "Puthia", "Tanore"],
+
+        "Natore":["Bagatipara", "Baraigram", "Gurudaspur", "Lalpur", "Natore Sadar", "Singra"],
+
+        "Nawabganj (Chapainawabganj)":["Bholahat", "Gomostapur", "Nachole", "Niamatpur", "Shibganj"],
+
+        "Pabna":["Atgharia", "Bera", "Bhangura", "Chatmohar", "Faridpur", "Ishwardi", "Pabna Sadar", "Santhia", "Sujanagar"],
+
+        "Sirajganj":["Belkuchi", "Chauhali", "Kamarkhanda", "Kazipur", "Raiganj", "Shahjadpur", "Sirajganj Sadar", "Tarash", "Ullapara"],
+
+       },
+      "Barishal":{
+        "Barishal":["Agailjhara", "Babuganj", "Bakerganj", "Banaripara", "Barishal Sadar", "Gaurnadi", "Hizla", "Mehendiganj", "Muladi", "Wazirpur"],
+
+        "Bhola":["Bhola Sadar", "Borhanuddin", "Char Fasson", "Daulatkhan", "Lalmohan", "Manpura", "Tazumuddin"],
+
+        "Jhalokathi":["Jhalokathi Sadar", "Kathalia", "Nalchity", "Rajapur"],
+
+        "Patuakhali":["Bauphal", "Dashmina", "Dumki", "Galachipa", "Kalapara", "Mirzaganj", "Patuakhali Sadar", "Rangabali"],
+
+        "Pirojpur":["Bhandaria", "Kaukhali", "Mathbaria", "Nazirpur", "Nesarabad (Swarupkati)", "Pirojpur Sadar", "Indurkani"],
+
+       },
+      "Rangpur":{
+        "Rangpur":["Badarganj", "Gangachara", "Kaunia", "Mithapukur", "Pirgachha", "Pirganj", "Rangpur Sadar", "Taraganj"],
+
+        "Dinajpur":["Birampur", "Birganj", "Birol", "Bochaganj", "Chirirbandar", "Dinajpur Sadar", "Ghoraghat", "Hakimpur", "Kaharole", "Khansama", "Nawabganj", "Parbatipur", "Phulbari"],
+
+        "Kurigram":["Bhurungamari", "Char Rajibpur", "Chilmari", "Kurigram Sadar", "Nageshwari", "Phulbari", "Rajarhat", "Raumari", "Ulipur"],
+
+        "Lalmonirhat":["Aditmari", "Hatibandha", "Kaliganj", "Lalmonirhat Sadar", "Patgram"],
+
+        "Nilphamari":["Dimla", "Domar", "Jaldhaka", "Kishoreganj", "Nilphamari Sadar", "Saidpur"],
+
+        "Panchagarh":["Atwari", "Boda", "Debiganj", "Panchagarh Sadar", "Tetulia"],
+
+        "Thakurgaon":["Baliadangi", "Haripur", "Pirganj", "Ranishankail", "Thakurgaon Sadar"],
+
+       },
+      "Mymensingh":{
+       "Mymensingh":["Bhaluka", "Dhobaura", "Fulbaria", "Gafargaon", "Gauripur", "Haluaghat", "Ishwarganj", "Mymensingh Sadar", "Muktagachha", "Nandail", "Phulpur", "Tarakanda", "Trishal"], 
+
+       "Netrokona":["Atpara", "Barhatta", "Durgapur", "Kalmakanda", "Kendua", "Khaliajuri", "Madan", "Mohanganj", "Netrokona Sadar", "Purbadhala"], 
+
+       "Sherpur":["Jhenaigati", "Nakla", "Nalitabari", "Sherpur Sadar", "Sreebardi"], 
+
+       "Jamalpur":["Baksiganj", "Dewanganj", "Islampur", "Jamalpur Sadar", "Madarganj", "Melandaha", "Sarishabari"], 
+
+
+       },
+      "Sylhet":{
+       "Sylhet":["Balaganj", "Beanibazar", "Bishwanath", "Companiganj", "Dakshin Surma", "Fenchuganj", "Golapganj", "Gowainghat", "Jaintiapur", "Kanaighat", "Osmaninagar", "Sylhet Sadar", "Zakiganj"], 
+
+       "Moulvibazar":["Barlekha", "Juri", "Kamalganj", "Kulaura", "Moulvibazar Sadar", "Rajnagar", "Sreemangal"], 
+
+       "Habiganj":["Ajmiriganj", "Bahubal", "Baniachang", "Chunarughat", "Habiganj Sadar", "Lakhai", "Madhabpur", "Nabiganj", "Shayestaganj"], 
+
+       "Sunamganj":["Bishwamvarpur", "Chhatak", "Dakshin Sunamganj", "Derai", "Dharmapasha", "Dowarabazar", "Jagannathpur", "Jamalganj", "Sulla", "Sunamganj Sadar", "Tahirpur" ], 
+ 
+            
+       },
+
+
+    
+
+
+    };
+
+    const divisionEl = document.getElementById('division');
+    const districtEl = document.getElementById('district');
+    const upazilaEl = document.getElementById('upazila');
+
+    function populateDivisions(){
+      Object.keys(BD_LOCATIONS).forEach(div =>{
+        const opt = document.createElement('option'); opt.value = div; opt.textContent = div;
+        divisionEl.appendChild(opt);
+      });
+    }
+
+    function onDivisionChange(){
+      const div = divisionEl.value;
+      districtEl.innerHTML = '<option value="">--Select District--</option>';
+      upazilaEl.innerHTML = '<option value="">--Select Upazila--</option>';
+      if(!div) return;
+      Object.keys(BD_LOCATIONS[div]).forEach(dist=>{
+        const opt = document.createElement('option'); opt.value = dist; opt.textContent = dist;
+        districtEl.appendChild(opt);
+      });
+    }
+
+    function onDistrictChange(){
+      const div = divisionEl.value; const dist = districtEl.value;
+      upazilaEl.innerHTML = '<option value="">--Select Upazila--</option>';
+      if(!dist) return;
+      BD_LOCATIONS[div][dist].forEach(up =>{
+        const opt = document.createElement('option'); opt.value = up; opt.textContent = up;
+        upazilaEl.appendChild(opt);
+      });
+    }
+
+    function validateAndSubmit(e){
+      // basic client-side checks (required attrs already)
+      return true;
+    }
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+    populateDivisions();
+  </script>
+</body>
+</html>
